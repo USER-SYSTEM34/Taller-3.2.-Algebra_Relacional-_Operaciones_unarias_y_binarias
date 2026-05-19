@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Infografía Taller 3.1 y 3.2 - Álgebra Relacional</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+    .container { width: 900px; margin: auto; background: #fff; padding: 30px; border: 3px solid #003366; }
+    h1, h2, h3 { color: #003366; text-align: center; }
+    .header { text-align: center; margin-bottom: 20px; }
+    .section { margin-bottom: 30px; }
+    .section-title { font-size: 18px; font-weight: bold; color: #003366; margin-bottom: 10px; border-bottom: 2px solid #003366; }
+    .content { font-size: 14px; line-height: 1.6; }
+    .team { background: #eef; padding: 10px; border-left: 4px solid #003366; }
+    .footer { text-align: center; font-size: 12px; margin-top: 30px; color: #555; }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>UNIVERSIDAD ANDINA DEL CUSCO</h1>
+        <h2>FACULTAD DE INGENIERÍA Y ARQUITECTURA</h2>
+        <h3>Escuela Profesional de Ingeniería de Sistemas</h3>
+        <p><strong>Taller 3.1 y 3.2</strong><br>Álgebra Relacional - Operaciones Unarias y Binarias</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Docente</div>
+        <div class="content">Ing. Hugo Espetia Huamanga</div>
+    </div>
+
+    <div class="section team">
+        <div class="section-title">Equipo: COMANDO CMD</div>
+        <div class="content">
+            Achahui Zans Sebastian Cristobal — 100%<br>
+            Chuquitapa Flores Kefren Darly — 100%<br>
+            Portugal Castillo Olger — 0% (Dispensó)<br>
+            Callo Gastañaga Carlos Eduardo — 0%
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Introducción</div>
+        <div class="content">
+            Este informe presenta el desarrollo de una práctica orientada al uso del álgebra relacional aplicado a las bases de datos <strong>Northwind</strong> y <strong>Pubs</strong>. 
+            Se aplicaron operaciones fundamentales como selección, proyección, renombramiento, unión, diferencia y producto cartesiano, utilizando la tecnología ADO.NET Entity Framework.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Modelo de Datos</div>
+        <div class="content">
+            <strong>Northwind:</strong> Clientes, Pedidos, Productos y Empleados.<br>
+            <strong>Pubs:</strong> Autores, Títulos, Editoriales y Ventas.<br>
+            Estos modelos permiten analizar información comercial y editorial respectivamente.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Operaciones Unarias - Northwind</div>
+        <div class="content">
+            Selección (σ): Clientes de USA, Productos con precio > 50.<br>
+            Proyección (π): Nombre y teléfono de clientes, Categorías de productos.<br>
+            Renombramiento (ρ): Alias “NombreCompleto” para empleados, “ProductoPrecio” para productos.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Operaciones Unarias - Pubs</div>
+        <div class="content">
+            Selección (σ): Autores con más de 3 publicaciones, Títulos con precio > 50, Publishers de USA.<br>
+            Proyección (π): Nombre y teléfono de autores, Títulos de libros sin duplicados.<br>
+            Renombramiento (ρ): Alias “LibroTitulo” para títulos, “Editorial” para publishers.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Operaciones Binarias</div>
+        <div class="content">
+            Unión (∪): Clientes de Northwind ∪ Autores de Pubs.<br>
+            Diferencia (−): Productos en stock − Productos descontinuados.<br>
+            Producto Cartesiano (×): Clientes × Pedidos en Northwind, Autores × Editoriales en Pubs.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Funciones del Formulario Pubs</div>
+        <div class="content">
+            Selección (σ): Filtra autores de California, títulos con precio > 50, publishers de USA.<br>
+            Proyección (π): Muestra atributos específicos de autores, títulos y publishers.<br>
+            Renombramiento (ρ): Renombra atributos para mayor claridad y comprensión.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Repositorio GitHub</div>
+        <div class="content">
+            Los scripts SQL y documentación técnica se encuentran en:<br>
+            <a href="https://github.com/USER-SYSTEM34/Taller-3.2.-Algebra_Relacional-_Operaciones_unarias_y_binarias" target="_blank">
+            Repositorio Taller 3.2 - Álgebra Relacional</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Cusco - 2026<br>
+        Infografía académica elaborada para la Universidad Andina del Cusco
+    </div>
+</div>
+</body>
+</html>
+
+</body>
+</html>
